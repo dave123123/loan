@@ -1,0 +1,69 @@
+.calculator {
+    width: 24em;
+}
+
+.calculatorBox {
+    background-color: rgb(163 205 58);
+    padding: 1.5em;
+    border-radius: 5px 5px 0 0;
+}
+
+.sliderDivider {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+    margin: 1em 0;
+}
+
+.loanItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.loanItemValue {
+    font-weight: 400;
+}
+
+.loanBox {
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+    overflow: hidden;
+}
+
+.loanBox.full {
+    max-height: 12em;
+    transition: max-height 1s ease-in-out;
+}
+
+.loanBoxInner {
+    padding: 1.5em;
+}
+
+.loanDivider {
+    background-color: lightgray;
+    border: 0.2px solid lightgray;
+    border-radius: 2px;
+    margin: 1em 0;
+}
+
+.spinner {
+    border-top: 4px #10652c solid;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    animation: spin 1000ms linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
